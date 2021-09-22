@@ -1,6 +1,6 @@
 import SvgSearch from "../../icons/SvgSearch";
 import "./navbar.css";
-import { navBarList } from "./navBarMock";
+import NavBarList from "./NavBarList";
 
 const height = window.innerHeight;
 const NavBar = () => {
@@ -12,11 +12,7 @@ const NavBar = () => {
         </div>
         <text className="concured_text">Concured</text>
       </div>
-      <div>
-        {navBarList.map((list) => {
-          return <text>{list.title}</text>;
-        })}
-      </div>
+      <NavBarList />
     </div>
   );
 };

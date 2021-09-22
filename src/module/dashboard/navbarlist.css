@@ -1,0 +1,18 @@
+.map_list_container {
+  padding: 16px 24px;
+  align-items: center;
+  display: flex;
+}
+.map_list_container:hover {
+  background-color: #f3f0fc;
+  border-right: 4px solid #7166f9;
+  cursor: pointer;
+}
+.map_list_container:active {
+  background-color: #7166f9;
+  border-right: 4px solid #7166f9;
+  cursor: pointer;
+}
+.title_style {
+  padding-left: 20px;
+}

@@ -1,5 +1,6 @@
+import { deflateSync } from "zlib";
 import SvgFire from "../../icons/SvgFire";
-import SvgHelp from "../../icons/SvgHelpe";
+import SvgHelp from "../../icons/SvgHelp";
 import SvgHome from "../../icons/SvgHome";
 import SvgLogout from "../../icons/SvgLogOut";
 import SvgNote from "../../icons/SvgNote";
@@ -35,7 +36,6 @@ export const navBarList = [
   },
 ];
 
-
 export const navBarListOne = [
   {
     icon: <SvgSetting />,
@@ -53,3 +53,70 @@ export const navBarListOne = [
     title: "Log out",
   },
 ];
+
+export const statusMock = [
+  {
+    key: "1",
+    data: "30 days",
+  },
+  {
+    key: "2",
+    data: "60 days",
+  },
+  {
+    key: "3",
+    data: "60 months",
+  },
+  {
+    key: "4",
+    data: "12 months",
+  },
+];
+
+export const chartList = [
+  {
+    name: 'January',
+    Iphone: 4000
+  },
+  {
+    name: "March",
+    Iphone: 1000,
+  },
+  {
+    name: "May",
+    Iphone: 4000,
+  },
+  {
+    name: "July",
+    Iphone: 800,
+  },
+  {
+    name: "October",
+    Iphone: 1500,
+  },
+];
+
+
+export const yearList = [
+  {
+    name: 'Feb',
+    value: '40,000.000'
+  },
+  {
+    name: "Mar",
+    value: '30,000.000',
+  },
+  {
+    name: "Apr",
+    value: '20,000.000',
+  },
+  {
+    name: "May",
+    value: '10,000.000',
+  },
+  {
+    name: "June",
+    value: '0',
+  },
+];
+

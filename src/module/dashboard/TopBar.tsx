@@ -1,8 +1,11 @@
 import "./topbar.css";
+import TopBarProfile from "./TopBarProfile";
+
 const TopBar = () => {
   return (
     <div className="top_bar_container">
-      <text>top bar</text>
+      <TopBarProfile isPlus/>
+      <TopBarProfile />
     </div>
   );
 };

@@ -1,0 +1,32 @@
+.flex_style {
+  display: flex;
+  /* border: 1px solid #CCC; */
+  width: fit-content;
+  /* border-radius: 16px; */
+}
+.value_list {
+  display: grid;
+  height: 0;
+  padding-top: 10px;
+  padding: 20px 12px;
+}
+.value_list_text{
+    text-align: end;
+    color: #CCC;
+    font-size: 14px;
+}
+.month_list{
+    position: relative;
+    right: 35px;
+    padding: 16px 0 24px 0px;
+}
+.month_list_text{
+    margin-left: 56px;
+    color: #CCC;
+    font-size: 14px;  
+}
+.fontStyle{
+  text-align: end;
+  color: #CCC;
+  font-size: 14px;
+}

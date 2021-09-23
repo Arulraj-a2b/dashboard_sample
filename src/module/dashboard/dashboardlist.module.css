@@ -1,0 +1,50 @@
+.project_container {
+  display: flex;
+  align-items: center;
+}
+.title_style {
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.status {
+  padding: 16px;
+  background-color: #7166f9;
+  border-radius: 30px;
+  color: #fff;
+}
+.list_container {
+  display: flex;
+  padding: 24px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+.status_container {
+  display: flex;
+}
+.total_visit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 10px 12px;
+}
+.chartContainer {
+  border: 1px solid #ccc;
+  width: fit-content;
+  border-radius: 16px;
+}
+.total_text {
+  font-size: 18px;
+  font-weight: bold;
+}
+.total_value {
+  font-size: 24px;
+  color: #7166f9;
+  font-weight: bold;
+}
+.svgHelp {
+  box-shadow: 0px 0px 0px 6px rgb(0 0 0 / 12%);
+  border-radius: 100%;
+  background-color: lightgray;
+  cursor: pointer;
+}

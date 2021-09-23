@@ -23,8 +23,8 @@ const ChartComponent = () => {
       </div>
       <div>
         <LineChart
-          width={400}
-          height={200}
+          width={500}
+          height={260}
           data={chartList}
           margin={{
             top: 15,

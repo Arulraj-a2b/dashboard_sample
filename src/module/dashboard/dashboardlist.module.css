@@ -12,6 +12,15 @@
   background-color: #7166f9;
   border-radius: 30px;
   color: #fff;
+  cursor: pointer;
+}
+.font_color_Black {
+  color: #000;
+  background-color: #f6f6fb !important;
+}
+.statusHover:hover {
+  background-color: #7166f9 !important;
+  opacity: 0.5;
 }
 .list_container {
   display: flex;
@@ -47,4 +56,9 @@
   border-radius: 100%;
   background-color: lightgray;
   cursor: pointer;
+}
+.card_top {
+  padding-top: 16px;
+  display: flex;
+  width: 100%;
 }

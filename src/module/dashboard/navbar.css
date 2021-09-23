@@ -26,3 +26,29 @@
   font-weight: 700;
   padding-left: 16px;
 }
+
+.input_style_container {
+  position: relative;
+  margin: 24px 4px 24px 24px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.input_svg {
+  position: absolute;
+  right: 24px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.inputContainer {
+  width: 100%;
+  padding: 11px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.svg_back {
+  margin-right: 8px;
+  cursor: pointer;
+}

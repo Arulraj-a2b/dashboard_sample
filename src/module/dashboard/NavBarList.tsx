@@ -8,18 +8,18 @@ const NavBarList = () => {
         {navBarList.map((list) => {
           return (
             <div key={list.key} className="map_list_container">
-              {list.icon}
+              <div className="icon_style">{list.icon}</div>
               <text className="title_style">{list.title}</text>
             </div>
           );
         })}
       </div>
-      <div>
+      <div className="bottom_list">
         {navBarListOne.map((list) => {
           return (
             <div key={list.key} className="map_list_container">
-              {list.icon}
-              <text className="title_style">{list.title}</text>
+              <div className="icon_style">{list.icon}</div>
+              <text>{list.title}</text>
             </div>
           );
         })}

@@ -13,6 +13,11 @@
   border-right: 4px solid #7166f9;
   cursor: pointer;
 }
-.title_style {
-  padding-left: 20px;
+.icon_style {
+  width: 44px;
+}
+.bottom_list {
+  position: absolute;
+  bottom: 0;
+  width: 250px;
 }

@@ -1,12 +1,15 @@
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
+import TopBar from "./TopBar";
 
 const DashboardScreen = () => {
-    return (
-        <div style={{display:'flex'}}>
-            <NavBar />
-            <text style={{ color: 'red' }}>haiii</text>
-        </div>
-    )
-}
+  return (
+    <div style={{ display: "flex" }}>
+      <NavBar />
+      <div style={{width:'100%'}}>
+        <TopBar />
+      </div>
+    </div>
+  );
+};
 
-export default DashboardScreen
+export default DashboardScreen;

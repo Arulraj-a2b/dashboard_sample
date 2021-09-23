@@ -1,8 +1,11 @@
 import SvgFire from "../../icons/SvgFire";
+import SvgHelp from "../../icons/SvgHelpe";
 import SvgHome from "../../icons/SvgHome";
+import SvgLogout from "../../icons/SvgLogOut";
 import SvgNote from "../../icons/SvgNote";
 import SvgProfile from "../../icons/SvgProfile";
 import SvgSave from "../../icons/SvgSave";
+import SvgSetting from "../../icons/SvgSettings";
 
 export const navBarList = [
   {
@@ -35,18 +38,18 @@ export const navBarList = [
 
 export const navBarListOne = [
   {
-    icon: <SvgHome />,
+    icon: <SvgSetting />,
     key: "1",
-    title: "Overview",
+    title: "Settings",
   },
   {
-    icon: <SvgFire />,
+    icon: <SvgHelp />,
     key: "2",
-    title: "Opportunities",
+    title: "Help",
   },
   {
-    icon: <SvgProfile />,
+    icon: <SvgLogout />,
     key: "3",
-    title: "My competitors",
+    title: "Log out",
   },
 ];

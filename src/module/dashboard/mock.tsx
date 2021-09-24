@@ -7,7 +7,13 @@ import SvgNote from "../../icons/SvgNote";
 import SvgProfile from "../../icons/SvgProfile";
 import SvgSave from "../../icons/SvgSave";
 import SvgSetting from "../../icons/SvgSettings";
-import { BLUE, chartColors, PINK, SKYBLUE } from "../../uikit/colors";
+import {
+  BLUE,
+  chartColors,
+  chartColorsOne,
+  PINK,
+  SKYBLUE,
+} from "../../uikit/colors";
 
 export const navBarList = [
   {
@@ -180,16 +186,42 @@ export const piechartList = [
     color: BLUE,
   },
   {
-    key: "1",
+    key: "3",
     name: "Social",
     value: 12,
     color: PINK,
   },
   {
-    key: "1",
+    key: "4",
     name: "Referals",
     value: 45,
-    color: "blue",
+    color: "rgba(5, 194, 207, 0.5)",
+  },
+];
+export const piechartListOne = [
+  {
+    key: "1",
+    name: "Magna mollis",
+    value: 12,
+    color: SKYBLUE,
+  },
+  {
+    key: "2",
+    name: "Massa interdum",
+    value: 24,
+    color: BLUE,
+  },
+  {
+    key: "3",
+    name: "Archu sodales",
+    value: 12,
+    color: PINK,
+  },
+  {
+    key: "4",
+    name: "Archu sodales",
+    value: 45,
+    color: "rgba(5, 194, 207, 0.5)",
   },
 ];
 
@@ -202,6 +234,19 @@ export const pieChartData = {
       data: [80, 50, 100, 50],
       backgroundColor: chartColors,
       hoverBackgroundColor: chartColors,
+    },
+  ],
+};
+
+export const pieChartDataOne = {
+  maintainAspectRatio: false,
+  responsive: false,
+  //   labels: ["a", "b", "c", "d"],
+  datasets: [
+    {
+      data: [50, 40, 66, 77],
+      backgroundColor: chartColorsOne,
+      hoverBackgroundColor: chartColorsOne,
     },
   ],
 };

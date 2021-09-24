@@ -1,19 +1,25 @@
 .nav_div {
   background-color: #f6f6fb;
-  /* width: 250px; */
-  /* width: 20vmin; */
+  width: 250px;
 }
 .svgSearchStyle {
   background-image: linear-gradient(#e17cfd, #4cd7f6);
   min-height: 40px;
   min-width: 40px;
   border-radius: 100%;
+  cursor: pointer;
+}
+.svgSearchStyle:hover {
+  transition: all 1s;
+  box-shadow: 0 0 8px 12px #2f2f2f;
 }
 
 .search_container {
   display: flex;
   align-items: center;
-  margin: 24px 4px 24px 24px;
+  margin: 24px 4px 24px 0px;
+  padding-left: 24px;
+  border-radius: 4px;
 }
 
 .svgStyle {
@@ -30,8 +36,7 @@
 
 .input_style_container {
   position: relative;
-  margin: 24px 4px 24px 24px;
-  padding-right: 16px;
+  margin: 24px 0px 24px 0px;
   display: flex;
   align-items: center;
 }
@@ -44,12 +49,20 @@
 }
 
 .inputContainer {
-  /* width: 100%; */
   padding: 11px;
   margin: 0px;
   box-sizing: border-box;
 }
+.inputContainer:hover {
+  background-color: #e5f1fd;
+  border-color: #7166f9;
+  border-radius: 4px;
+}
 .svg_back {
   margin-right: 8px;
   cursor: pointer;
+}
+.svg_back:hover {
+  transition: all 1s;
+  transform: scale(0.5);
 }

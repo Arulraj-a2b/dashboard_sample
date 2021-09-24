@@ -1,4 +1,4 @@
-import { navBarList, navBarListOne } from "./navBarMock";
+import { navBarList, navBarListOne } from "./mock";
 import styles from "./navbarlist.module.css";
 import classNames from "classnames/bind";
 

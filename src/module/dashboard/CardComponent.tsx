@@ -25,10 +25,15 @@ const CardComponent = ({
       })}
     >
       <div className={styles.top_style}>
-        <div className={cx("svgComputer")}>
+        <div className={cx("svgComputer", { svgComputerHover: isHelp })}>
           <SvgProfile fill={isHelp ? WHITE : BLUE} />
         </div>
-        <text className={cx("text_style_one", { font_color_Black: !isHelp })}>
+        <text
+          className={cx("text_style_one", {
+            font_color_Black: !isHelp,
+            text_style_one_hover: isHelp,
+          })}
+        >
           {totalpercentage}
         </text>
       </div>
@@ -39,7 +44,10 @@ const CardComponent = ({
         <text className={cx("text_style_three", { font_color_gray: !isHelp })}>
           {updateName}
         </text>
-        <SvgHelp fill={isHelp ? WHITE : BLUE} />
+        <SvgHelp
+          fill={isHelp ? WHITE : BLUE}
+          className={cx({ svgHelp: isHelp })}
+        />
       </div>
     </div>
   );

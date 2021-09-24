@@ -3,7 +3,7 @@ import { BLUE } from "../../uikit/colors";
 import CardComponent from "./CardComponent";
 import ChartComponent from "./ChartComponent";
 import styles from "./dashboardlist.module.css";
-import { cardData, cardDataOne, statusMock } from "./navBarMock";
+import { cardData, cardDataOne, statusMock } from "./mock";
 import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
@@ -53,12 +53,6 @@ const DashboardList = () => {
             <text className={styles.total_text}>Total visits</text>
             <text className={styles.total_value}>42.43M</text>
           </div>
-          {/* <img
-            src="https://i.ibb.co/HC5TDTS/scrnli-24-09-2021-12-01-37.png"
-            alt="loading"
-            width="100%"
-            height="300"
-          /> */}
           <ChartComponent />
         </div>
         <div className={`grid ${cx("card_container")}`}>

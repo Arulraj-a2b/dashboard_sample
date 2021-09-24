@@ -4,7 +4,12 @@ import TopBar from "./TopBar";
 import styles from "./dashboardscreen.module.css";
 import DashboardList from "./DashboardList";
 import PieChart from "./PieChart";
-import { pieChartData } from "./navBarMock";
+import {
+  pieChartData,
+  pieChartDataOne,
+  piechartList,
+  piechartListOne,
+} from "./mock";
 
 const height = window.innerHeight;
 const cx = classNames.bind(styles);
@@ -21,11 +26,21 @@ const DashboardScreen = () => {
           <TopBar />
         </div>
         <DashboardList />
-        <div className={`flex ${cx('pie_chart_container')}`}>
+        <div className={`flex ${cx("pie_chart_container")}`}>
           <div className={`width100 ${cx("pieChart")}`}>
-            <PieChart data={pieChartData} title={'Source Trafic Source'}/>
+            <PieChart
+              piechartList={piechartList}
+              total={"12%"}
+              data={pieChartData}
+              title={"Source Trafic Source"}
+            />
           </div>
-          <PieChart data={pieChartData} title={'Source Trafic Source'}/>
+          <PieChart
+            piechartList={piechartListOne}
+            total={"45%"}
+            data={pieChartDataOne}
+            title={"Share of Voice"}
+          />
         </div>
       </div>
     </div>

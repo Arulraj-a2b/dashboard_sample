@@ -1,5 +1,4 @@
 import { Doughnut } from "react-chartjs-2";
-import { piechartList } from "./navBarMock";
 import styles from "./piechart.module.css";
 import classNames from "classnames/bind";
 
@@ -17,10 +16,12 @@ const options = {
 };
 type props = {
   data: any;
-  title: string
+  title: string;
+  total: string;
+  piechartList: any;
 };
 
-const PieChart = ({ data,title }: props) => {
+const PieChart = ({ data, title, total, piechartList }: props) => {
   return (
     <div className={styles.overAll}>
       <p className={styles.title}>{title}</p>
@@ -30,7 +31,7 @@ const PieChart = ({ data,title }: props) => {
             className={styles.input_style}
             placeholder={"      Source          Trafic Sources, %"}
           />
-          {piechartList.map((list) => {
+          {piechartList.map((list: any) => {
             return (
               <div className={`flex center ${cx("chart_list")}`}>
                 <div
@@ -46,6 +47,7 @@ const PieChart = ({ data,title }: props) => {
         </div>
         <div className={cx("doughut_style")}>
           <Doughnut data={data} options={options} />
+          <span className={cx("pieTotal")}>{total}</span>
         </div>
       </div>
     </div>

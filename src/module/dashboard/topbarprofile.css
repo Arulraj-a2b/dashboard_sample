@@ -1,26 +1,42 @@
-.box_style{
-    background-image: linear-gradient(#e17cfd, #7166f9);
-    border: 1px solid #F6F6FB;
-    border-radius: 16px;
-    height: 50px;
-    width: 50px;
-    margin-right: 20px;
+.box_style {
+  background-image: linear-gradient(#e17cfd, #7166f9);
+  border: 1px solid #f6f6fb;
+  border-radius: 16px;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
 }
 
-.plus_svg{
-    background-color: #7166f9;
-    border-radius: 100%;
-    height: 24px;
-    width: 24px;
-    box-shadow: 0px 0px 0px 6px rgb(0 0 0 / 12%);
-    margin-left: 16px;
+.box_style:hover {
+  transition: all 0.5s;
+  transform: scale(1.5);
 }
-.svg_down{
-    background-color: #F6F6FB;
-    border-radius: 6px;
+
+.plus_svg {
+  background-color: #7166f9;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  box-shadow: 0px 0px 0px 6px rgb(0 0 0 / 12%);
+  margin-left: 16px;
+  cursor: pointer;
 }
-.title{
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 16px;
+.plus_svg:hover {
+  transition: all 0.5s;
+  transform: translateY(10px);
+}
+
+.svg_down:hover {
+  transition: all 0.5s;
+  transform: translateY(10px);
+}
+.svg_down {
+  background-color: #f6f6fb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 16px;
 }

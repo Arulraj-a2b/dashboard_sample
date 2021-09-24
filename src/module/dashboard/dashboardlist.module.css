@@ -40,6 +40,7 @@
 .chartContainer {
   border: 1px solid #ccc;
   border-radius: 16px;
+  padding-right: 16px;
 }
 .total_text {
   font-size: 18px;
@@ -50,11 +51,19 @@
   color: #7166f9;
   font-weight: bold;
 }
+.total_value:hover {
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
 .svgHelp {
   box-shadow: 0px 0px 0px 6px rgb(0 0 0 / 12%);
   border-radius: 100%;
   background-color: lightgray;
   cursor: pointer;
+}
+.svgHelp:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 .card_top {
   padding-top: 16px;
@@ -62,6 +71,10 @@
 }
 .status_map_style {
   margin-left: 12px;
+}
+.status_map_style:hover {
+  transition: all 0.5s;
+  transform: scale(1.2);
 }
 .bottom_container {
   padding-right: 4px;

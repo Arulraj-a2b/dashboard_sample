@@ -12,6 +12,7 @@
   padding: 12px 24px 0px 24px;
   margin-right: 16px;
   cursor: pointer;
+  transition: all 1s;
 }
 .card_container {
   background: linear-gradient(
@@ -21,27 +22,48 @@
   );
 }
 
+.card_container:hover {
+  transition: all 0.5s;
+  box-shadow: inset 0 0 2px 2px #4f2a57;
+}
+
 .card_container_hover:hover {
   background: linear-gradient(
     149deg,
     rgba(225, 124, 253, 1) 15%,
     rgba(229, 235, 236, 1) 100%
   );
+  transition: all 0.5s;
+  box-shadow: inset 0 0 16px 12px #4f2a57;
 }
+
 .svgComputer {
   background-color: #8f929440;
   border-radius: 12px;
   padding: 12px;
+}
+.svgComputerHover:hover {
+  transition: all 0.5s;
+  transform: scale(1.5);
 }
 .text_style_one {
   font-size: 24px;
   color: #fff;
   font-weight: bold;
 }
+.text_style_one_hover:hover {
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+
 .text_style_two {
   font-size: 50px;
   font-weight: bold;
   color: #fff;
+}
+.text_style_two:hover {
+  transition: all 0.5s;
+  transform: scale(1.5);
 }
 .text_style_three {
   font-size: 18px;
@@ -53,6 +75,11 @@
 .font_color_Black {
   color: #000 !important;
 }
-.font_color_gray{
+.font_color_gray {
   color: #a29c9c;
+}
+
+.svgHelp:hover {
+  transition: all 0.5s;
+  transform: scale(1.5);
 }

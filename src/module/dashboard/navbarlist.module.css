@@ -9,7 +9,7 @@
 }
 .map_list_container:hover {
   background-color: #aeacb5;
-  border-right: 4px solid #7166f9;
+  /* border-right: 4px solid #7166f9; */
   cursor: pointer;
 }
 .map_list_container:active {
@@ -23,5 +23,5 @@
 .bottom_list {
   position: absolute;
   bottom: 0;
-  /* width: 214px; */
+  width: 214px;
 }

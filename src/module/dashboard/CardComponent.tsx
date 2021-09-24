@@ -18,7 +18,12 @@ const CardComponent = ({
   isHelp,
 }: Props) => {
   return (
-    <div className={cx("card_container_common", { card_container: isHelp ,card_container_hover: !isHelp})}>
+    <div
+      className={cx("card_container_common", {
+        card_container: isHelp,
+        card_container_hover: !isHelp,
+      })}
+    >
       <div className={styles.top_style}>
         <div className={cx("svgComputer")}>
           <SvgProfile fill={isHelp ? WHITE : BLUE} />
@@ -31,7 +36,7 @@ const CardComponent = ({
         {updateValue}
       </text>
       <div className={cx("top_style", "padding8")}>
-        <text className={cx("text_style_three", { font_color_Black: !isHelp })}>
+        <text className={cx("text_style_three", { font_color_gray: !isHelp })}>
           {updateName}
         </text>
         <SvgHelp fill={isHelp ? WHITE : BLUE} />

@@ -13,10 +13,7 @@ const NavBar = () => {
     <div className="nav_div" style={{ height }}>
       <div>
         {!isSearch && (
-          <div
-            onClick={handleSearchOpen}
-            className="search_container"
-          >
+          <div onClick={handleSearchOpen} className="search_container">
             <div className="svgSearchStyle">
               <SvgSearch fill={"#FFF"} className={"svgStyle"} />
             </div>
@@ -25,7 +22,7 @@ const NavBar = () => {
         )}
         {isSearch && (
           <div className="input_style_container">
-            <div onClick={handleSearchClose} className='svg_back'>
+            <div onClick={handleSearchClose} className="svg_back">
               <SvgBackArrow />
             </div>
             <div>

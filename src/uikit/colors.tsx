@@ -5,3 +5,11 @@ export const BLUE ='#7166f9'
 export const SKYBLUE ='#4CD7F6'
 export const GRAY ='#F6F6FB'
 export const BLACK= '#000000'
+
+export const chartColors = [
+  PINK,
+  BLUE,
+  SKYBLUE,
+  'blue'
+  ];
+  

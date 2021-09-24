@@ -1,0 +1,58 @@
+.input_style {
+  border: none;
+  background-color: #f6f6fb;
+  padding: 6px;
+  border-radius: 8px;
+  width: 230px;
+  margin-bottom: 16px;
+  height: 30px;
+}
+.input_style::placeholder {
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 0px 16px 0px;
+  border-bottom: 1px solid #f6f6fb;
+  margin: 0 16px;
+}
+.box {
+  height: 10px;
+  width: 20px;
+  background-color: red;
+  border-radius: 4px;
+}
+.unit {
+  padding: 0px 16px 0px 6px;
+  font-size: 14px;
+}
+.unit_name {
+  font-size: 14px;
+}
+.value {
+  position: relative;
+  text-align: end;
+  width: 100%;
+  font-size: 14px;
+}
+.overAll {
+  border: 1px solid #f6f6fb;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 100%;
+}
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px;
+}
+.chart_list {
+  padding: 12px 10px 0px 4px;
+}
+.doughut_style{
+  width: 180px;
+  height: 180px;
+  padding-left: 16px;
+}

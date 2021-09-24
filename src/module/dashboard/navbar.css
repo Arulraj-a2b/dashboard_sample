@@ -1,6 +1,7 @@
 .nav_div {
   background-color: #f6f6fb;
-  width: 250px;
+  /* width: 250px; */
+  /* width: 20vmin; */
 }
 .svgSearchStyle {
   background-image: linear-gradient(#e17cfd, #4cd7f6);
@@ -43,7 +44,7 @@
 }
 
 .inputContainer {
-  width: 100%;
+  /* width: 100%; */
   padding: 11px;
   margin: 0px;
   box-sizing: border-box;

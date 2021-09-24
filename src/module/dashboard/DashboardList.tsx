@@ -14,22 +14,29 @@ type StatusProps = {
 };
 const Status = ({ name, isSelect }: StatusProps) => {
   return (
-    <text className={cx("status", { font_color_Black: !isSelect,statusHover: !isSelect })}>{name}</text>
+    <text
+      className={cx("status", {
+        font_color_Black: !isSelect,
+        statusHover: !isSelect,
+      })}
+    >
+      {name}
+    </text>
   );
 };
 
 const DashboardList = () => {
   return (
-    <div style={{ height: window.innerHeight - 130, overflow: "scroll" }}>
+    <div>
       <div className={styles.list_container}>
         <div className={styles.project_container}>
-          <text className={styles.title_style}>Project statistics</text>
+          <span className={styles.title_style}>Project statistics</span>
           <SvgHelp fill={BLUE} className={styles.svgHelp} />
         </div>
         <div className={styles.status_container}>
           {statusMock.map((list) => {
             return (
-              <div style={{ marginLeft: 12 }}>
+              <div className={styles.status_map_style}>
                 <Status
                   key={list.key}
                   name={list.data}
@@ -40,16 +47,22 @@ const DashboardList = () => {
           })}
         </div>
       </div>
-      <div className="flex">
-        <div className={styles.chartContainer}>
+      <div className={`flex ${cx("bottom_container")}`}>
+        <div className={styles.chartContainer} style={{ width: "50%" }}>
           <div className={styles.total_visit}>
             <text className={styles.total_text}>Total visits</text>
             <text className={styles.total_value}>42.43M</text>
           </div>
+          {/* <img
+            src="https://i.ibb.co/HC5TDTS/scrnli-24-09-2021-12-01-37.png"
+            alt="loading"
+            width="100%"
+            height="300"
+          /> */}
           <ChartComponent />
         </div>
-        <div className="grid width100" style={{ marginLeft: 24 }}>
-          <div className="flex width100">
+        <div className={`grid ${cx("card_container")}`}>
+          <div className="flex">
             {cardData.map((list) => {
               return (
                 <CardComponent

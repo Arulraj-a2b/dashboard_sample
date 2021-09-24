@@ -7,32 +7,38 @@ import SvgNote from "../../icons/SvgNote";
 import SvgProfile from "../../icons/SvgProfile";
 import SvgSave from "../../icons/SvgSave";
 import SvgSetting from "../../icons/SvgSettings";
+import { BLUE, chartColors, PINK, SKYBLUE } from "../../uikit/colors";
 
 export const navBarList = [
   {
     icon: <SvgHome />,
     key: "1",
     title: "Overview",
+    isScreen: true,
   },
   {
     icon: <SvgFire />,
     key: "2",
     title: "Opportunities",
+    isScreen: false,
   },
   {
     icon: <SvgProfile />,
     key: "3",
     title: "My competitors",
+    isScreen: false,
   },
   {
     icon: <SvgNote />,
     key: "4",
     title: "Briefs",
+    isScreen: false,
   },
   {
     icon: <SvgSave />,
     key: "5",
     title: "Saved",
+    isScreen: false,
   },
 ];
 
@@ -41,16 +47,19 @@ export const navBarListOne = [
     icon: <SvgSetting />,
     key: "1",
     title: "Settings",
+    isScreen: false,
   },
   {
     icon: <SvgHelp />,
     key: "2",
     title: "Help",
+    isScreen: false,
   },
   {
     icon: <SvgLogout />,
     key: "3",
     title: "Log out",
+    isScreen: false,
   },
 ];
 
@@ -58,22 +67,22 @@ export const statusMock = [
   {
     key: "1",
     data: "30 days",
-    isSelect: true
+    isSelect: true,
   },
   {
     key: "2",
     data: "60 days",
-    isSelect: false
+    isSelect: false,
   },
   {
     key: "3",
     data: "60 months",
-    isSelect: false
+    isSelect: false,
   },
   {
     key: "4",
     data: "12 months",
-    isSelect:false
+    isSelect: false,
   },
 ];
 
@@ -156,3 +165,43 @@ export const cardDataOne = [
     help: false,
   },
 ];
+
+export const piechartList = [
+  {
+    key: "1",
+    name: "Direct",
+    value: 12,
+    color: SKYBLUE,
+  },
+  {
+    key: "2",
+    name: "Search",
+    value: 24,
+    color: BLUE,
+  },
+  {
+    key: "1",
+    name: "Social",
+    value: 12,
+    color: PINK,
+  },
+  {
+    key: "1",
+    name: "Referals",
+    value: 45,
+    color: "blue",
+  },
+];
+
+export const pieChartData = {
+  maintainAspectRatio: false,
+  responsive: false,
+  //   labels: ["a", "b", "c", "d"],
+  datasets: [
+    {
+      data: [80, 50, 100, 50],
+      backgroundColor: chartColors,
+      hoverBackgroundColor: chartColors,
+    },
+  ],
+};

@@ -24,7 +24,7 @@
 }
 .list_container {
   display: flex;
-  padding: 24px 0px;
+  padding: 24px 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -39,7 +39,6 @@
 }
 .chartContainer {
   border: 1px solid #ccc;
-  width: fit-content;
   border-radius: 16px;
 }
 .total_text {
@@ -60,5 +59,16 @@
 .card_top {
   padding-top: 16px;
   display: flex;
+}
+.status_map_style {
+  margin-left: 12px;
+}
+.bottom_container {
+  padding-right: 4px;
+  padding-left: 20px;
+}
+.card_container {
+  margin-left: 24px;
   width: 100%;
+  overflow: scroll;
 }

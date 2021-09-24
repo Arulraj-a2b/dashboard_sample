@@ -1,0 +1,13 @@
+.top_bar {
+  border-bottom: 1px solid #f6f6fb;
+  margin: 0 20px;
+}
+.overflow_style {
+  overflow-y: scroll;
+}
+.pieChart {
+  padding-right: 16px;
+}
+.pie_chart_container {
+  padding: 24px 0;
+}

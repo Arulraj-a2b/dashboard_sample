@@ -8,7 +8,7 @@ const TopBar = () => {
   return (
     <div className={cx("top_bar_container")}>
       <TopBarProfile isPlus />
-      <TopBarProfile />
+      <TopBarProfile src={"https://i.ibb.co/ZKNvgf2/A-25495-copy.jpg"} />
     </div>
   );
 };

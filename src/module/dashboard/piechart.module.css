@@ -10,8 +10,8 @@
 .input_style::placeholder {
   text-align: center;
 }
-.input_style:hover{
-  background-color: #E5F1FD;
+.input_style:hover {
+  background-color: #e5f1fd;
 }
 
 .title {
@@ -66,9 +66,9 @@
   position: absolute;
   font-size: 28px;
   font-weight: 800;
-  color: #4CD7F6;
+  color: #4cd7f6;
 }
-.pieTotal:hover{
-  transition: all .5s;
+.pieTotal:hover {
+  transition: all 0.5s;
   transform: scale(1.2);
 }

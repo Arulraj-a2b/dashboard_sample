@@ -1,9 +1,7 @@
-import DashboardScreen from './module/dashboard/DashboardScreen';
+import DashboardScreen from "./module/dashboard/DashboardScreen";
 
 function App() {
-  return (
-      <DashboardScreen />
-  );
+  return <DashboardScreen />;
 }
 
 export default App;

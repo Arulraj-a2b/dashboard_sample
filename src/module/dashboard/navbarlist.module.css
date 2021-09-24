@@ -9,7 +9,6 @@
 }
 .map_list_container:hover {
   background-color: #aeacb5;
-  /* border-right: 4px solid #7166f9; */
   cursor: pointer;
 }
 .map_list_container:active {

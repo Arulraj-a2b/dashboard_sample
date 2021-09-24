@@ -7,36 +7,14 @@ import {
   YAxis,
 } from "recharts";
 import { BLUE, GRAY, SKYBLUE, WHITE } from "../../uikit/colors";
-
-const data = [
-  {
-    name: "January",
-    value: 4000,
-  },
-  {
-    name: "March",
-    value: 1000,
-  },
-  {
-    name: "May",
-    value: 4000,
-  },
-  {
-    name: "July",
-    value: 800,
-  },
-  {
-    name: "October",
-    value: 1500,
-  },
-];
+import { chartData } from "./mock";
 
 const ChartComponent = () => {
   return (
     <LineChart
       width={400}
       height={320}
-      data={data}
+      data={chartData}
       margin={{
         top: 15,
         right: 30,

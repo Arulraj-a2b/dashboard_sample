@@ -92,51 +92,29 @@ export const statusMock = [
   },
 ];
 
-export const chartList = [
+export const chartData = [
   {
     name: "January",
-    Iphone: 4000,
+    value: 4000,
   },
   {
     name: "March",
-    Iphone: 1000,
+    value: 1000,
   },
   {
     name: "May",
-    Iphone: 4000,
+    value: 4000,
   },
   {
     name: "July",
-    Iphone: 800,
+    value: 800,
   },
   {
     name: "October",
-    Iphone: 1500,
+    value: 1500,
   },
 ];
 
-export const yearList = [
-  {
-    name: "Feb",
-    value: "40,000.000",
-  },
-  {
-    name: "Mar",
-    value: "30,000.000",
-  },
-  {
-    name: "Apr",
-    value: "20,000.000",
-  },
-  {
-    name: "May",
-    value: "10,000.000",
-  },
-  {
-    name: "June",
-    value: "0",
-  },
-];
 
 export const cardData = [
   {

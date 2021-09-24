@@ -5,7 +5,8 @@ export const BLUE = "#7166f9";
 export const SKYBLUE = "#4CD7F6";
 export const GRAY = "#F6F6FB";
 export const BLACK = "#000000";
+export const BABY_BLUE = "rgba(5, 194, 207, 0.5)";
 
-export const chartColors = [PINK, BLUE, SKYBLUE, "rgba(5, 194, 207, 0.5)"];
+export const chartColors = [PINK, BLUE, SKYBLUE, BABY_BLUE];
 
-export const chartColorsOne = [SKYBLUE, PINK, "rgba(5, 194, 207, 0.5)", BLUE];
+export const chartColorsOne = [SKYBLUE, PINK, BABY_BLUE, BLUE];
